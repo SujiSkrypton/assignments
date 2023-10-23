@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, imtial-scale-1">
+    <title>
+        Javascript
+    </title>
+</head>
+
+<body>
+    <button onclick="test()"> Click me</button>
+    <button onclick="test1()">Reset</button>
+    <button onclick="test2()">Hide</button>
+    <button onclick="test3()">display</button>
+
+    <p>
+        1st Para
+    </p>
+    <p>
+        2nd Para
+    </p>
+    <p>
+        3rd Para
+    </p>
+    <p>
+        4th Para
+    </p>
+    <p>
+        5th Para
+    </p>
+    <script>
+        const colors = ['green', 'red', 'blue', 'orange'];
+        let per = {
+            "name": "Sujatha",
+            "age": 26,
+            "name": "female"
+        };
+        function test() {
+            var x = document.querySelectorAll('p');
+            for(let i = 0; i<x.length; i++){
+                x[i].style.color = colors[i % colors.length];
+            }
+        }
+        function test1() {
+            var x = document.querySelectorAll('p');
+            for(let i = 0; i<x.length; i++){
+                x[i].style.color = '';
+            }
+        }
+        function test2() {
+            var x = document.querySelectorAll('p');
+            x.forEach(item => item.style.display = 'none');
+        }
+        function test3() {
+            var x = document.querySelectorAll('p');
+            x.forEach(item => item.style.display = 'block');
+        }
+
+
+    </script>
+</body>
+
+</html>

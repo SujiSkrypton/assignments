@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, imtial-scale-1">
+        <title>
+            Javascript
+        </title>
+        <style>
+        .bg-blue {
+        background: blue;
+        color: white;
+      }
+      
+      .bg-orange {
+        background: #ff801b;
+        color: black;
+      }
+      </style>
+    </head>
+<body>
+      <div class="change-color">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste deserunt officia voluptatum earum laboriosam? Est, ipsam. Ex veniam, incidunt, alias quasi aliquam sit eaque recusandae, expedita fugiat possimus a corrupti.
+      </div>
+      
+      
+      <div class="change-color bg-blue">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste deserunt officia voluptatum earum laboriosam? Est, ipsam. Ex veniam, incidunt, alias quasi aliquam sit eaque recusandae, expedita fugiat possimus a corrupti.
+      </div>
+      <script>
+         function ChangeColors() {
+        var elements = document.getElementsByClassName('change-color');
+      
+        for (let element of elements) {
+          if (element.classList.contains("bg-blue")) {
+            element.classList.add('bg-orange');
+          } else {
+            element.classList.add('bg-blue')
+          }
+        }
+      }
+      
+      ChangeColors();
+   
+      </script>
+</body>

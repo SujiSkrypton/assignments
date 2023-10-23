@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+    
+    <style>
+        #container{
+            background-color: rgb(198, 160, 32);
+            width: 20px;
+            padding: 20px 200px 30px 10px;
+            display: block;
+           
+
+
+        }
+
+    </style>
+</head>
+
+<body> 
+    <div id="container">
+
+        <label for="txtNum2">Number2:</label><br>
+        <input type="text" id="txtNum2" value="0"><br>
+
+        <label for="txtSum">Sum</label><br>
+        <input type="text" id="txtSum" value="0"  disabled><br><br>
+
+        <input type="button" value="Add" onclick="add()"><br><br>
+        <input type="button" value="reset " onclick="reset()"><br><br>
+        <input type="button" value="multiply" onclick="multiply()"><br><br>
+        <input type="button" value="division" onclick="division()"><br><br>
+        <input type="button" value="modulus" onclick="modulus()"><br><br>
+
+
+
+
+    </div>
+    <script type="text/Javascript">
+        function reset() {
+            document.getElementById("txtNum1").value = "0";
+            document.getElementById("txtNum2").value = "0";
+            document.getElementById("txtSum").value = "0";
+
+
+        }
+         function add(){
+              var num1 = Number(document.getElementById("txtNum1").value);
+              var num2 = Number(document.getElementById("txtNum2").value);
+              var sum = num1 + num2;
+              document.getElementById("txtSum").value = String(sum);
+         }
+         function multiply(){
+              var num1 = Number(document.getElementById("txtNum1").value);
+              var num2 = Number(document.getElementById("txtNum2").value);
+              var sum = num1 * num2;
+              document.getElementById("txtSum").value = String(sum);
+         }
+         function division(){
+              var num1 = Number(document.getElementById("txtNum1").value);
+              var num2 = Number(document.getElementById("txtNum2").value);
+              var sum = num1 / num2;
+              document.getElementById("txtSum").value = String(sum);
+         }
+         function modulus(){
+              var num1 = Number(document.getElementById("txtNum1").value);
+              var num2 = Number(document.getElementById("txtNum2").value);
+              var sum = num1 % num2;
+              document.getElementById("txtSum").value = String(sum);
+         }
+         
+    </script>
+</body>
+
+</html>

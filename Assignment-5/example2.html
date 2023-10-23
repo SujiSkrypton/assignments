@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function x(){
+      document.getElementById("rte").innerHTML = 10;
+      document.getElementById("demo").innerHTML = 5;
+    }
+    document.addEventListener('DOMContentLoaded', x, false);
+    setTimeout(x, 1000);
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("rte").innerHTML = 10;
+      document.getElementById("demo").innerHTML = 5;
+    }, false);
+    setTimeout(() => {
+      document.getElementById("rte").innerHTML = 10;
+      document.getElementById("demo").innerHTML = 5;
+    }, 1000);
+  </script>
+  <h2> Variable Using let</h2>
+
+  <p id="rte"></p>
+  <p id="demo"></p>
+
+</body>
+
+</html>

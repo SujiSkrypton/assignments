@@ -1,0 +1,38 @@
+table {
+    font-family: aerial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(odd) {
+    background-color: chocolate;
+
+}
+
+.add {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.button{
+   background-color:rgb(196, 91, 52);
+   transition-duration: 0.4s;
+   cursor: pointer;
+   padding: 10px;
+}
+.button:hover{
+    background-color: rgb(48, 36, 44);
+}
